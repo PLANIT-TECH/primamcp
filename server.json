@@ -8,7 +8,7 @@
     "url": "https://github.com/PLANIT-TECH/primamcp",
     "source": "github"
   },
-  "version": "0.1.0",
+  "version": "0.2.1",
   "remotes": [
     {
       "type": "streamable-http",
@@ -17,6 +17,25 @@
         {
           "name": "Authorization",
           "description": "Bearer token in the form 'Bearer sk-legal-...'. Create an API key at https://mcp.planitprima.com/",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@planit-tech/primamcp",
+      "version": "0.2.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PRIMAMCP_API_KEY",
+          "description": "PRIMAMCP API key (sk-legal-…). Create one at https://mcp.planitprima.com/",
           "isRequired": true,
           "isSecret": true
         }

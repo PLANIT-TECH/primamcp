@@ -1,7 +1,8 @@
 {
   "name": "@planit-tech/primamcp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Local MCP bridge for PRIMAMCP — verified, citable German & EU law for any MCP-capable AI assistant. Forwards stdio MCP traffic to https://mcp.planitprima.com/mcp.",
+  "mcpName": "io.github.PLANIT-TECH/primamcp",
   "keywords": [
     "mcp",
     "model-context-protocol",
