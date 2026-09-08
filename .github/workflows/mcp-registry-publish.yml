@@ -1,0 +1,39 @@
+name: Publish to MCP Registry
+
+# Manual trigger only, on purpose: the registry verifies package ownership by
+# fetching package.json from npmjs.org, so the npm release must already be live.
+# A tag-triggered job would race npm-publish.yml for the same tag and fail.
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: Publish server.json
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write  # OIDC: authenticates as the repo, not as a user
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install mcp-publisher
+        run: |
+          curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+
+      - name: Verify the npm release referenced by server.json is live
+        run: |
+          PKG=$(jq -r '.packages[0].identifier' server.json)
+          VER=$(jq -r '.packages[0].version' server.json)
+          MCP_NAME=$(curl -fsSL "https://registry.npmjs.org/$PKG/$VER" | jq -r '.mcpName // empty')
+          EXPECTED=$(jq -r '.name' server.json)
+          if [ "$MCP_NAME" != "$EXPECTED" ]; then
+            echo "::error::$PKG@$VER carries mcpName='$MCP_NAME', expected '$EXPECTED'. Publish the npm package first."
+            exit 1
+          fi
+
+      - name: Authenticate
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish
+        run: ./mcp-publisher publish
