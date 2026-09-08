@@ -3,6 +3,15 @@
   "name": "io.github.PLANIT-TECH/primamcp",
   "title": "PRIMAMCP",
   "description": "Verified, citable German & EU law for any LLM. Daily updates from official sources, hosted in DE.",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/PLANIT-TECH/primamcp/main/public/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "1254x1254"
+      ]
+    }
+  ],
   "websiteUrl": "https://mcp.planitprima.com",
   "repository": {
     "url": "https://github.com/PLANIT-TECH/primamcp",
