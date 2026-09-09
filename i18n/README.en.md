@@ -15,6 +15,7 @@ Claude · ChatGPT · Cursor · Copilot · any MCP-capable client.
 [![GDPR](https://img.shields.io/badge/compliance-GDPR-005bbb?style=flat-square)](https://mcp.planitprima.com/datenschutz)
 [![Made in Germany](https://img.shields.io/badge/hosting-Germany%20%F0%9F%87%A9%F0%9F%87%AA-000000?style=flat-square)](https://mcp.planitprima.com/datenschutz)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)](../LICENSE)
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/mcp-planitprima-com-docs)
 
 [**Quickstart**](#-60-second-quickstart) · [**Tools**](#-tools) · [**Skills & Rules**](#-skills--rules) · [**Coverage**](#-what-primamcp-covers) · [**Deutsch**](../README.md)
 

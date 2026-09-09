@@ -26,8 +26,9 @@ site/
 *.swp
 .DS_Store
 
-# Claude Code local settings
+# Claude Code / Serena local settings
 .claude/
+.serena/
 
 # Scratch / test files
 test.md
