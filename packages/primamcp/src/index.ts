@@ -87,7 +87,7 @@ program
     if (!apiKey) {
       process.stderr.write(
         "primamcp: missing API key. Pass --api-key sk-legal-… or set PRIMAMCP_API_KEY.\n" +
-        "             Get a key at https://mcp.planitprima.com (14-day free trial).\n",
+        "             Get a key at https://mcp.planitprima.com (5-day free trial).\n",
       );
       process.exit(2);
     }

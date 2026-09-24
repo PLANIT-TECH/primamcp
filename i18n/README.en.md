@@ -53,7 +53,7 @@ npx -y @planit-tech/primamcp setup --client claude
 # Option 2 — manual entry (see per-client sections below)
 ```
 
-**Get an API key:** [mcp.planitprima.com](https://mcp.planitprima.com) → 14-day free trial, no credit card. The plain-text key is shown **exactly once** at creation — copy it straight into your client.
+**Get an API key:** [mcp.planitprima.com](https://mcp.planitprima.com) → 5-day free trial, no credit card. The plain-text key is shown **exactly once** at creation — copy it straight into your client.
 
 ---
 
@@ -384,7 +384,7 @@ All prices are **gross** (VAT included), per seat and month. Annual billing save
 
 **Seat ladder** on Pro and Pro Plus: every seat from the 2nd, 6th and 11th onwards costs less — Pro €15.90 / €13.90 / €11.90, Pro Plus €55.90 / €48.90 / €41.90 per month. Billing is graduated: each seat is charged at its own tier's rate. On Lite every seat costs the same.
 
-The first 14 days run with Pro features, no credit card. After that you simply continue on the Free tier — no automatic switch into a paid subscription, cancel any time.
+The first 5 days run with Pro features, no credit card. After that you simply continue on the Free tier — no automatic switch into a paid subscription, cancel any time.
 
 → [mcp.planitprima.com/pricing](https://mcp.planitprima.com/pricing)
 

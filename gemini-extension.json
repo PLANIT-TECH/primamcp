@@ -5,7 +5,7 @@
   "settings": [
     {
       "name": "API Key",
-      "description": "PRIMAMCP API key (sk-legal-…). Create one at https://mcp.planitprima.com (14-day free trial, no credit card).",
+      "description": "PRIMAMCP API key (sk-legal-…). Create one at https://mcp.planitprima.com (5-day free trial, no credit card).",
       "envVar": "PRIMAMCP_API_KEY"
     }
   ],

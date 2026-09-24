@@ -5,7 +5,7 @@ Vorlage für einen **ChatGPT-Custom-GPT**, der PRIMAMCP als MCP-Connector / Acti
 ## Voraussetzungen
 
 - **ChatGPT Pro / Team / Enterprise** (Custom-GPT- und Connector-Funktionalität)
-- PRIMAMCP-Account → [14 Tage kostenlos](https://mcp.planitprima.com/pricing)
+- PRIMAMCP-Account → [5 Tage kostenlos](https://mcp.planitprima.com/pricing)
 - Custom-GPT-Editor offen (Explore GPTs → Create)
 
 ## Schritt 1 — Connector hinzufügen

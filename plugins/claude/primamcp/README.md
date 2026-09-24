@@ -10,7 +10,7 @@ From within Claude Code:
 /plugin install PLANIT-TECH/primamcp
 ```
 
-Then either authenticate via the OAuth flow Claude Code will prompt you for, or set `PRIMAMCP_API_KEY` (`sk-legal-…`) in your environment if you prefer Bearer auth. Get a key at [mcp.planitprima.com](https://mcp.planitprima.com) (14-day free trial, no credit card).
+Then either authenticate via the OAuth flow Claude Code will prompt you for, or set `PRIMAMCP_API_KEY` (`sk-legal-…`) in your environment if you prefer Bearer auth. Get a key at [mcp.planitprima.com](https://mcp.planitprima.com) (5-day free trial, no credit card).
 
 ## What's inside
 

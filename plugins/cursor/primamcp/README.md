@@ -26,7 +26,7 @@ Reload Cursor (`Cmd/Ctrl+Shift+P → Reload Window`). The MCP icon shows **PRIMA
 
 ## Get an API key
 
-[mcp.planitprima.com](https://mcp.planitprima.com) — 14-day free trial, no credit card.
+[mcp.planitprima.com](https://mcp.planitprima.com) — 5-day free trial, no credit card.
 
 ## License
 

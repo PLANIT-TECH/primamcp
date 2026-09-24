@@ -18,7 +18,7 @@ Supported `--client` values: `claude` · `cursor` · `vscode` · `windsurf`
 
 The `setup` command writes a properly-formatted MCP server entry into the right config file for the chosen client and prints the path it touched.
 
-You'll be prompted for an API key — get one (14-day free trial, no credit card) at [mcp.planitprima.com](https://mcp.planitprima.com). Or pass it explicitly:
+You'll be prompted for an API key — get one (5-day free trial, no credit card) at [mcp.planitprima.com](https://mcp.planitprima.com). Or pass it explicitly:
 
 ```bash
 npx -y @planit-tech/primamcp setup --client cursor --api-key sk-legal-...

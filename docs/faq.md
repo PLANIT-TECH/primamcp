@@ -48,7 +48,7 @@ Eine Person oder ein eigenständiger API-Key. Wenn ein API-Key einer Person zuge
 
 ### Wie funktioniert die 14-tägige Testphase?
 
-Anmeldung im Portal, PRIMAMCP 14 Tage mit Pro-Funktionen und ohne Kreditkarte testen — kein automatischer Übergang in einen kostenpflichtigen Plan. Danach läuft der Account im Free-Tarif weiter (150 Anfragen/Monat, max. 15 pro Tag). Wenn du mehr brauchst, schließt du aktiv ein Abonnement ab.
+Anmeldung im Portal, PRIMAMCP 5 Tage mit Pro-Funktionen und ohne Kreditkarte testen — kein automatischer Übergang in einen kostenpflichtigen Plan. Danach läuft der Account im Free-Tarif weiter (150 Anfragen/Monat, max. 15 pro Tag). Wenn du mehr brauchst, schließt du aktiv ein Abonnement ab.
 
 ### Kann ich jederzeit kündigen?
 
@@ -111,7 +111,7 @@ Vier Tarife, alle Preise brutto pro Seat und Monat — Jahresabrechnung spart 16
 | Pro | 19,90 € | 199 € | 5.000 | 60/min |
 | Pro Plus | 69,90 € | 699 € | 25.000 | 300/min |
 
-Vollständige Coverage und bevorzugter E-Mail-Support in jedem kostenpflichtigen Tarif. Die ersten 14 Tage laufen mit Pro-Funktionen, ohne Kreditkarte.
+Vollständige Coverage und bevorzugter E-Mail-Support in jedem kostenpflichtigen Tarif. Die ersten 5 Tage laufen mit Pro-Funktionen, ohne Kreditkarte.
 
 → [Pricing](https://mcp.planitprima.com/pricing)
 

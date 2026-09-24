@@ -53,7 +53,7 @@ npx -y @planit-tech/primamcp setup --client claude
 # Variante 2 — manueller Eintrag (siehe Client-Sektionen unten)
 ```
 
-**API-Key holen:** [mcp.planitprima.com](https://mcp.planitprima.com) → 14 Tage kostenlos testen, keine Kreditkarte. Klartext erscheint **genau einmal** beim Erstellen — direkt in den Client kopieren.
+**API-Key holen:** [mcp.planitprima.com](https://mcp.planitprima.com) → 5 Tage kostenlos testen, keine Kreditkarte. Klartext erscheint **genau einmal** beim Erstellen — direkt in den Client kopieren.
 
 ---
 
@@ -384,7 +384,7 @@ Alle Preise **brutto** (inkl. USt.), pro Seat und Monat. Jahresabrechnung spart 
 
 **Sitzstaffel** auf Pro und Pro Plus: ab dem 2., 6. und 11. Seat wird jeder weitere günstiger — Pro 15,90 / 13,90 / 11,90 €, Pro Plus 55,90 / 48,90 / 41,90 € pro Monat. Gestaffelte Abrechnung: jeder Seat zum Satz seiner Stufe. Lite kostet jeden Seat gleich viel.
 
-Die ersten 14 Tage laufen mit Pro-Funktionen, ohne Kreditkarte. Danach geht es ohne Zutun im Free-Tarif weiter — kein automatischer Wechsel in ein kostenpflichtiges Abo, jederzeit kündbar.
+Die ersten 5 Tage laufen mit Pro-Funktionen, ohne Kreditkarte. Danach geht es ohne Zutun im Free-Tarif weiter — kein automatischer Wechsel in ein kostenpflichtiges Abo, jederzeit kündbar.
 
 → [mcp.planitprima.com/pricing](https://mcp.planitprima.com/pricing)
 

@@ -15,7 +15,7 @@ export async function runBridge(options: BridgeOptions = {}): Promise<void> {
   if (!apiKey) {
     process.stderr.write(
       "primamcp: missing API key. Set PRIMAMCP_API_KEY (env) or pass --api-key.\n" +
-      "             Get a key at https://mcp.planitprima.com (14-day free trial).\n"
+      "             Get a key at https://mcp.planitprima.com (5-day free trial).\n"
     );
     process.exit(1);
   }
