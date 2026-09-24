@@ -392,7 +392,7 @@ The first 14 days run with Pro features, no credit card. After that you simply c
 
 ## 📖 More documentation
 
-- [Tool reference](../docs/tools-reference.md) — all 8 tools with parameters, examples, response schemas, error cases
+- [Tool reference](../docs/tools-reference.md) — all 9 tools with parameters, examples, response schemas, error cases
 - [Architecture & search pipeline](../docs/architecture.md) — hybrid search, reranking, filters
 - [Benchmarks](../docs/benchmarks.md) — GerLeRB results, reproducibility
 - [FAQ](../docs/faq.md) — frequently asked questions

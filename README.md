@@ -392,7 +392,7 @@ Die ersten 14 Tage laufen mit Pro-Funktionen, ohne Kreditkarte. Danach geht es o
 
 ## 📖 Weitere Doku
 
-- [Tool-Referenz](docs/tools-reference.md) — alle 8 Tools mit Parametern, Beispielen, Response-Schemas, Fehlerfällen
+- [Tool-Referenz](docs/tools-reference.md) — alle 9 Tools mit Parametern, Beispielen, Response-Schemas, Fehlerfällen
 - [Architektur & Suchpipeline](docs/architecture.md) — Hybrid-Suche, Reranking, Filter
 - [Benchmarks](docs/benchmarks.md) — GerLeRB-Resultate, Reproduzierbarkeit
 - [FAQ](docs/faq.md) — häufige Fragen
