@@ -24,7 +24,7 @@ Alle Tools liefern ein frozen dataclass als JSON, mit folgenden Standardfeldern:
 | `offset` | Aktuelles Offset |
 | `has_more` | Boolean — gibt es weitere Seiten? |
 | `next_offset` | Wert für den nächsten Call (wenn `has_more` true) |
-| `hint` | Menschenlesbarer Tipp ans LLM („increase top_k for broader results") |
+| `hint` | Menschenlesbarer Tipp ans LLM („increase limit for broader results") |
 
 Plus tool-spezifische Felder (`hits`, `norm`, `decisions`, `laws`, `toc`, `stats`).
 
@@ -58,7 +58,7 @@ Wenn du **bereits ein Zitat hast** (z. B. „§ 823 BGB"), nutze direkt [`legal_
 | Parameter | Typ | Default | Beschreibung |
 | --- | --- | --- | --- |
 | `query` | string | — | Natürlichsprachliche Suchanfrage |
-| `top_k` | int | 5 | Anzahl Treffer (1–50) |
+| `limit` | int | 5 | Anzahl Treffer (1–50) |
 | `source_type` | enum | — | Quelle, u. a. `gii` (Bundesrecht), `eurlex` (EU-Recht), `rechtsprechung` (Bundesgerichte), `bayern_gesetze` / `nrw_gesetze` (Landesrecht), `nrw_rechtsprechung` / `sachsen_rechtsprechung` (Landesgerichte), `bverfge` / `bverwg` (Leitentscheidungen bis 2009), `verwaltungsvorschriften`, `edsa` / `dsk` (Datenschutz-Guidance), `gesetzesmaterialien`. Volle Liste: `legal://filter_values` |
 | `jurisdiction` | enum | — | `de` (gesamtes deutsches Recht), `eu`, `de_by` (Bayern), `de_sn` (Sachsen), `de_nw` (NRW) |
 | `document_kind` | enum | — | `statute` / `regulation` / `directive` (Normtext — eine Filterklasse), `decision` (Rechtsprechung), `explanatory_memorandum` (Gesetzesmaterialien), `guidance` (Datenschutz-Guidance) |
@@ -82,7 +82,7 @@ Alle Filter sind **AND**-verknüpft.
   "tool": "legal_search",
   "arguments": {
     "query": "Schmerzensgeld bei Persönlichkeitsverletzung",
-    "top_k": 5
+    "limit": 5
   }
 }
 ```
@@ -97,7 +97,7 @@ Liefert wahrscheinlich §§ 823, 253 BGB plus einschlägige BGH-Entscheidungen �
   "arguments": {
     "query": "Übermittlung personenbezogener Daten in Drittländer",
     "source_type": "eurlex",
-    "top_k": 10
+    "limit": 10
   }
 }
 ```
@@ -113,7 +113,7 @@ Liefert wahrscheinlich §§ 823, 253 BGB plus einschlägige BGH-Entscheidungen �
     "court": "BGH",
     "decision_type": "Urteil",
     "date_from": "2022-01-01",
-    "top_k": 10
+    "limit": 10
   }
 }
 ```
@@ -125,7 +125,7 @@ Liefert wahrscheinlich §§ 823, 253 BGB plus einschlägige BGH-Entscheidungen �
   "count": 5,
   "total": 142,
   "has_more": true,
-  "hint": "Increase top_k or apply filters to narrow results.",
+  "hint": "Increase limit or apply filters to narrow results.",
   "hits": [
     {
       "norm_id": 123456,
@@ -412,7 +412,7 @@ Komplementär zu [`legal_find_citing_decisions`](#legal_find_citing_decisions) (
 
 | Parameter | Typ | Default | Beschreibung |
 | --- | --- | --- | --- |
-| `norm` | string | — | Norm wie `§ 823 BGB`, `Art. 87a GG` |
+| `citation` | string | — | Norm wie `§ 823 BGB`, `Art. 87a GG` |
 | `limit` | int | 10 | Maximalzahl Begründungs-Abschnitte (1–50) |
 
 ### Beispiel
@@ -420,7 +420,7 @@ Komplementär zu [`legal_find_citing_decisions`](#legal_find_citing_decisions) (
 ```json
 {
   "tool": "legal_get_materials",
-  "arguments": { "norm": "§ 823 BGB" }
+  "arguments": { "citation": "§ 823 BGB" }
 }
 ```
 
@@ -450,7 +450,7 @@ Begründungs-Abschnitte, neueste zuerst — jeweils mit `BT-Drs.`-Fundstelle, de
 | Parameter | Typ | Default | Beschreibung |
 | --- | --- | --- | --- |
 | `source_type` | enum | — | Quelle, u. a. `gii`, `eurlex`, `rechtsprechung`, `bayern_gesetze`, `nrw_gesetze`, `verwaltungsvorschriften` … — volle Liste: `legal://filter_values` |
-| `search` | string | — | Case-insensitive Suche über Abkürzung und Titel (z. B. `bgb`, `datenschutz`) |
+| `query` | string | — | Case-insensitive Suche über Abkürzung und Titel (z. B. `bgb`, `datenschutz`) |
 | `limit` | int | 50 | Maximalzahl Treffer pro Seite (1–500) |
 | `offset` | int | 0 | Pagination-Offset |
 
@@ -476,7 +476,7 @@ Begründungs-Abschnitte, neueste zuerst — jeweils mit `BT-Drs.`-Fundstelle, de
 {
   "tool": "legal_list_laws",
   "arguments": {
-    "search": "Daten"
+    "query": "Daten"
   }
 }
 ```

@@ -6,6 +6,28 @@ Format orientiert an [Keep a Changelog](https://keepachangelog.com/de/1.1.0/).
 
 ## 2026
 
+### November 2026
+
+**Neue Quellen**
+- **Leitlinien und Mitteilungen der EU-Kommission** — die Auslegungshilfen der Kommission aus dem Amtsblatt (Reihe C), auf Deutsch und Englisch. Darunter die Leitlinien zu den Transparenzpflichten nach Art. 50 KI-VO, zu NIS-2 (Art. 3 und 4), zu Fahrzeugdaten unter dem Data Act und zum DSA, zum Produktrecht (Blue Guide, GPSR), zum Verbraucherrecht (UGP- und Verbraucherrechte-Leitfaden) sowie zum Kartellrecht (Vertikal- und Horizontal-Leitlinien, Marktabgrenzung, Art. 102 AEUV). Einzelne Randnummern sind direkt abrufbar, z. B. `legal_lookup` mit `Rn. 45 Vertikal-Leitlinien`.
+
+**Konto**
+- **Rechnungen im Kundenportal** — alle Rechnungen abrufbar, auf Wunsch zusätzlich per E-Mail.
+
+### Oktober 2026
+
+**Neue Quellen**
+- **BGH und Bundespatentgericht 2000–2009** — rund 30.000 Entscheidungen des Bundesgerichtshofs und rund 18.000 des Bundespatentgerichts. Schließt die Lücke vor der ab 2010 verfügbaren Bundesrechtsprechung.
+- **Historische EuGH-Rechtsprechung** — Urteile und Beschlüsse des Gerichtshofs vor 2013, zurück bis in die 1950er-Jahre (z. B. Costa/ENEL, C-6/64).
+- **Tätigkeitsberichte der Datenschutzaufsicht** — die Tätigkeitsberichte der Datenschutzaufsichtsbehörden von Bund und Ländern seit 2018 (ohne Thüringen). Sie ergänzen die EDSA- und DSK-Papiere um die Aufsichtspraxis aus konkreten Fällen.
+
+**Geändert**
+- **Einheitliche Parameternamen** — `legal_search` nimmt `limit` statt `top_k`, `legal_get_materials` `citation` statt `norm`, `legal_list_laws` `query` statt `search`. Die alten Namen werden nicht mehr angenommen. MCP-Clients lesen die Parameter aus dem Tool-Schema und sind nicht betroffen; anpassen muss nur, wer die Tools aus eigenen Skripten mit festen Parameternamen aufruft.
+
+**Konto & Website**
+- **Kontingent-Benachrichtigung** — eine E-Mail, bevor das Kontingent aufgebraucht ist, und eine, wenn es aufgebraucht ist.
+- **Einrichtungsanleitungen** für [Claude](https://mcp.planitprima.com/claude) und [ChatGPT](https://mcp.planitprima.com/chatgpt) mit aktuellen Screenshots.
+
 ### August 2026
 
 **Umbenennung: Lawbster heißt jetzt PRIMAMCP**

@@ -256,7 +256,7 @@ Neun Tools, alle batch-fähig, alle async, alle zitierfähig. Discovery-Tools li
   "tool": "legal_search",
   "arguments": {
     "query": "Schmerzensgeld bei Persönlichkeitsverletzung",
-    "top_k": 5
+    "limit": 5
   }
 }
 ```

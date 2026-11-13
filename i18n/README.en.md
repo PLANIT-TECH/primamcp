@@ -256,7 +256,7 @@ Nine tools, all batch-capable, all async, all citable. Discovery tools return co
   "tool": "legal_search",
   "arguments": {
     "query": "non-pecuniary damages for personality-rights violation",
-    "top_k": 5
+    "limit": 5
   }
 }
 ```
